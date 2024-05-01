@@ -1,0 +1,25 @@
+<h1>Audio Steganography Project</h1>
+<h2>Overview</h2>
+<p>This project implements an audio steganography technique in Python using the numpy and scipy librar<h2>How It Works</h2>
+<h3>Encoding Process</h3>
+<ol>
+<li><strong>Input Audio</strong>: The program takes a <code>.wav</code> file as input. This file must be<li><strong>Message Conversion</strong>: Converts the text message into a binary string.</li>
+<li><strong>Noise Generation</strong>: Generates a pseudo-random noise sequence.</li>
+<li><strong>Message Modulation</strong>: The binary message is modulated into the noise.</li>
+<li><strong>Signal Mixing</strong>: The modulated noise is then mixed with the original audio signal. The <li><strong>Output Audio</strong>: The mixed audio is saved as a new <code>.wav</code> file, containin</ol>
+<h3>Libraries Used</h3>
+<ul>
+<li><code>numpy</code> for numerical operations</li>
+<li><code>scipy.io.wavfile</code> for reading and writing <code>.wav</code> files</li>
+<li><code>scipy.signal</code> for signal processing</li>
+</ul>
+<h3>Example Usage</h3>
+<p><code>python
+encode_audio('path_to_input.wav', 'Your Secret Message', 'path_to_output.wav')
+</code></p>
+<h2>Project Files</h2>
+<ul>
+<li><code>audio_steganography.py</code>: Contains the implementation of the encoding function.</li>
+</ul>
+<h2>Conclusion</h2>
+<p>This project demonstrates a basic application of audio steganography, showing how digital communica
